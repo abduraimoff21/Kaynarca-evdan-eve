@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Your Home Is More Than Just Things",
+  "text": "We understand that moving isn’t just boxes—it’s memories, emotions, and fresh beginnings. Our caring team handles your family's move with patience, warmth, and the respect it deserves.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "What Sets Us Apart?",
+      "content": "Transparent pricing, dedicated support, and complete care for your belongings. We don’t just move boxes—we move lives, with integrity and attention to detail.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Why Choose Us?",
+      "content": "With years of experience, a trained team, and modern equipment, we deliver a moving service you can count on. From careful packing to timely delivery, we treat every move with professionalism and respect.",
       "icon": "notes.svg"
     }
   ]
