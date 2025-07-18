@@ -42,8 +42,8 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+          <Col lg={13} md={11} sm={12} xs={24} style={{ marginLeft: '-100px' }}>
+            <SvgIcon src={icon} width="115%" height="120%" />
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
