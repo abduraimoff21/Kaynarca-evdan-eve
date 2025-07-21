@@ -4,12 +4,14 @@ import { notification } from "antd";
 interface IValues {
   name: string;
   email: string;
+  number: string;
   message: string;
 }
 
 const initialValues: IValues = {
   name: "",
   email: "",
+  number: "",
   message: "",
 };
 
@@ -28,7 +30,10 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    // Determine the API URL based on the environment
+    const url = process.env.NODE_ENV === 'development'
+      ? 'http://localhost:5000/api/submit-form' // Local backend URL
+      : '/api/submit-form'; // Vercel deployment URL (handled by vercel.json rewrites)
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
@@ -60,6 +65,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
         }
       }
     } catch (error) {
+      console.error("Fetch error:", error);
       notification["error"]({
         message: "Error",
         description: "Failed to submit form. Please try again later.",
